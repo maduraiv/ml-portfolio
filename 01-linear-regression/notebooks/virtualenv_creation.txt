@@ -1,0 +1,29 @@
+⚡ Steps to Create venv
+
+Navigate into your project folder
+bash
+cd C:\Users\Srinivasan\Desktop\Madurai\ml-portfolio\01-linear-regression
+
+
+Create the virtual environment inside the project
+bash
+python -m venv venv
+This makes a venv/ folder right inside your project.
+Keeps everything self-contained.
+
+
+Activate the environment
+Windows:
+bash
+venv\Scripts\activate
+
+Install your ML libraries inside venv
+bash
+pip install numpy pandas matplotlib scikit-learn
+
+Save dependencies for Git sharing
+bash
+pip freeze > requirements.txt
+Tell VS Code to use this venv
+
+Press Ctrl+Shift+P → type Python: Select Interpreter → choose the one inside your project’s venv.
